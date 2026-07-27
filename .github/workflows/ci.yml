@@ -24,6 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+      - name: Build Docker image
+        run: docker build -t cloud-reliability-platform .
       - name: Build Docker Image
         run: docker build -t cloud-reliability-platform:v1 .
